@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  text-align: center;
+  background: linear-gradient(#02a4d3, white);
+  $font-variable: "Inter Tight", sans-serif;
+  font-family: $font-variable;
+  margin: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.popup-info__div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-info__framework {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-info__window {
+  width: 75%;
+  height: 75%;
+  background-color: rgb(240, 240, 240);
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-info__message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 3rem;
+  width: 75%;
+  height: 50%;
+  font-size: 2rem;
+}
+
+.popup__button {
+  width: 0;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/*Generally*/
+
+.button {
+  margin: 1rem;
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  font-family: var(font-family);
+  cursor: pointer;
+}
+
+.weather-search-button {
+  width: 30rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addFavorite-button,
+.deleteFavorite-button {
+  margin-top: 2rem;
+  width: 0;
+  padding: 1rem 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+.current-weather__date,
+.two-days-weather__date,
+.weather-24-h__clock {
+  font-size: 2rem;
+}
+
+.weather-description,
+.weather-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-temperature,
+.weather-wind-speed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-weather__headline,
+.weather-24-h__headline,
+.two-days-weather__headline {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.weather-description,
+.weather-img,
+.weather-temperature,
+.weather-wind-speed {
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  margin: 1rem 1.5rem;
+}
+
+.headline__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+.headline__div h1 {
+  border-bottom: 0.5rem solid black;
+}
+
+.headline__div img {
+  width: 100px;
+  margin-left: 2rem;
+  object-fit: cover;
+}
+
+.input-div {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.input-button {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8rem;
+}
+
+.input-select {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+input {
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  width: 30rem;
+  height: 5rem;
+}
+
+.select__headline {
+  font-size: 2.5rem;
+}
+
+select {
+  width: 15rem;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.weather-output {
+  width: 95%;
+  height: 30rem;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.weather-cityname-button-div {
+  margin-bottom: 5rem;
+}
+
+.weather-cityname {
+  font-size: 2.5rem;
+}
+
+.weather-button-div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0rem;
+}
+
+//  weather-output
+
+//  current-weather
+
+.current-weather__div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-weather {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.current-weather__data {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 2rem;
+}
+
+//  24-h-weather
+
+.weather-24-h {
+  width: 100%;
+  margin: 5rem;
+
+  &__collect {
+    width: 95%;
+    height: 35rem;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    margin-bottom: 5rem;
+  }
+
+  &__framework {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 2.5rem;
+    width: 100%;
+  }
+
+  &__data {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+//  two-days-weather
+
+.two-days-weather__div {
+  width: 100%;
+  height: 100%;
+}
+
+.two-days-weather__collect {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.two-days-weather__part {
+  width: 50%;
+  margin: 2rem 2rem;
+}
+
+.two-days-weather__data {
+  display: grid;
+  grid-template-columns: auto auto;
+}

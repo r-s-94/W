@@ -1,0 +1,25 @@
+{
+  "name": "wetter-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Wetter-App-24H-Weather.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "echo 3",
+    "Wetter-App": "sass --watch --update styles/scss:styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r-s-94/Wetter-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r-s-94/Wetter-App/issues"
+  },
+  "homepage": "https://github.com/r-s-94/Wetter-App#readme",
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}

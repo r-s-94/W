@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/css/Wetter-App.css" />
+    <link rel="stylesheet" href="styles/css/Wetter-App Responsive.css" />
+  </head>
+  <body>
+    <div class="popup-info__div">
+      <div class="popup-info__framework">
+        <div class="popup-info__window">
+          <div class="popup-info__message"></div>
+          <button onclick="closeInfoPopUp()" class="button popup__button">
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="headline__div">
+      <h1>Wetter-<wbr />App</h1>
+      <img src="img/day/113.png" alt="" />
+    </div>
+
+    <div class="input-div">
+      <div class="input-button">
+        <input
+          type="text"
+          name=""
+          id=""
+          class="cityName"
+          placeholder="Gebe hier eine Stadt ein"
+        />
+        <button
+          onclick="searchOptionInput()"
+          class="button weather-search-button"
+        >
+          Wetterdaten ausgeben
+        </button>
+      </div>
+
+      <div class="input-select">
+        <h1 class="select__headline">Favoriten &#9733;</h1>
+        <select
+          name=""
+          onchange="searchOptionSelect()"
+          class="cityName"
+        ></select>
+      </div>
+    </div>
+
+    <div class="weather-output">
+      <div class="weather-cityname-button-div">
+        <div class="weather-cityname">Stadtname</div>
+        <div class="weather-button-div">
+          <button onclick="addFavorite()" class="button addFavorite-button">
+            &#9733;
+          </button>
+          <button
+            onclick="deletFavorite()"
+            class="button deleteFavorite-button"
+          >
+            &#128465;
+          </button>
+        </div>
+      </div>
+
+      <div class="current-weather__div">
+        <h2 class="current-weather__headline">
+          Wetter<wbr />daten für aktuellen Tag
+        </h2>
+        <div class="current-weather"></div>
+      </div>
+
+      <div class="weather-24-h">
+        <h2 class="weather-24-h__headline">Wetter für 24 Stunden</h2>
+        <div class="weather-24-h__collect"></div>
+      </div>
+
+      <div class="two-days-weather__div">
+        <h2 class="two-days-weather__headline">Wetter für 2 Tage</h2>
+        <div class="two-days-weather__collect"></div>
+      </div>
+    </div>
+
+    <script>
+      /*         
+            
+    
+      */
+    </script>
+
+    <script src="Wetter-App-input-and-loadWeatherData.js"></script>
+    <script src="Wetter-App-CurrentWeather.js"></script>
+    <script src="Wetter-App-Two-Days-Weather.js"></script>
+    <script src="Wetter-App-24H-Weather.js"></script>
+    <script src="Wetter-App-favorites.js"></script>
+    <script>
+      /*
+      
+
+      */
+    </script>
+  </body>
+</html>
